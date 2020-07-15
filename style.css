@@ -1,0 +1,149 @@
+body{
+    margin: 0;
+    color: #333;
+    font-family: Verdana, sans-serif;
+    margin: 0;
+}
+
+header{
+    background-color: skyblue;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.container{
+    /*background-color: white;*/
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    display: flex;
+    max-width: 500px;
+} 
+
+.icon{
+    padding-left: 25px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-right: 25px;
+
+}
+
+.icon img {
+    border-radius: 40%;
+    border-width: 4px;
+    border-color: white;
+    border-style: solid;
+}
+
+.info {
+    text-align: center;
+}
+
+a:link {
+    color: gray;
+}
+a:visited {
+    color: rgb(196, 61, 61);
+}
+a:hover {
+    color: rgb(241, 94, 126);
+}
+a:active {
+    color: rgb(16, 13, 190);
+}
+
+li {
+    display: inline;
+    list-style-type: none;
+    padding-right: 20px;
+}
+
+ul {
+    padding-left: 0;
+}
+
+
+
+/*mainページ*/
+main {
+    margin: 0 auto;
+    text-align: left;
+    width: 960px;
+}
+
+h1.profile {
+    margin-top: 30px;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+h3 {
+    border-bottom: solid 3px dimgray;
+}
+
+/*profileページ */
+
+
+.profile-block1 {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    
+
+}
+.profile-photo1 {
+    margin-right: 25px;
+}
+
+.profile-block2 {
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 200px;
+}
+
+.profile-text2 {
+   margin-right: 25px;
+}
+
+
+
+/*studyページ*/
+
+
+.study-block {
+    display: flex;
+    margin-bottom: 200px;
+}
+
+
+.study-photo {
+    margin-right: 25px;
+}
+
+/*Contactページ*/
+.contact-block {
+    margin-bottom: 100px;
+}
+.contact {
+    margin-top: 10px;
+}
+
+input[name="information"] {
+    margin-bottom: 10px;
+    width: 15em;
+}
+
+textarea {
+    width: 25em;
+    height: 5em;
+}
+
+.contact-info {
+    margin-top: 30px;
+}
+
+/*フッター*/
+.footer {
+    padding-left: 20px;
+    background-color: skyblue;
+}

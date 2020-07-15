@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nate's Profile</title>
+    <link rel="icon" href="images/mickey.JPG">
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+
+        var num = 0;
+        function changeImg() {
+            document.getElementById("name").src = "images/name" + num + ".jpeg";
+            num++;
+            if (num == 3) num = 0;
+        }
+            var num = 0;
+        function changeImgfood() {
+            document.getElementById("food").src = "images/food" + num + ".jpeg";
+            num++;
+            if (num == 3) num = 0;
+        }
+    </script>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="icon">
+                <a href="index.html">
+            <img src="images/australia.jpeg" width="130" height="160" alt="profile">
+            </a>
+            </div>
+
+            <div class="info">
+                <h1 id="top">Natsumi Hosoi</h1>
+                <p>プログラマーの見習いです！</p>
+                <ul>
+                    <li>
+                        <a href="index.html#name">Profile</a>
+                    </li>
+                    
+                    <li>
+                        <a href="index.html#study">Study</a>
+                    </li>
+                    <li>
+                        <a href="index.html#contact">Contact</a>
+                    </li>
+                </ul>
+            
+            </div>
+
+    
+            </div>
+    </header>
+    <!--profileページ-->
+    <main>
+        <div class="thema">
+        <h1 class="profile">Profile</h1>
+            <div class="profile-block1">
+            <div class="profile-photo1">
+                <img src="images/name0.jpeg" id="name" width="300" height="400" alt="自己紹介の写真"
+                    onclick="changeImg()">
+                   
+            </div>
+            <div class="profile-text1">
+                <h3 id="name">名前：Natsumi Hosoi</h3>
+                <p><strong>1992年生まれの28歳です。<br>
+                    大学卒業後は、カナダへ留学し、語学の習得に加え、大好きなスノーボードを満喫してきました！<br>
+                    帰国後は、インバウンド事業に携わり、その後人材業界で営業職を勤めました。<br>
+                    これまで難しい遠い存在だと思っていたWEBエンジニアの勉強を始め、転職を決意しました。</strong></p>
+                    <p>I am 28 years old, was born in 1992.<br>
+                        I went to Canada to study English for 2 years and I got English skill there. <br>
+                    Moreover I could enjoy snowbording almost everyday in winter!<br>
+                    After back to Japan, I worked at inbound business in Kyoto.<br>
+                And now, I decided to be a webengineer as I dreamed for a long time.</p>
+            </div>
+            </div>
+
+            <div class="profile-block2">
+                <div class="profile-text2">
+                    <h3>趣味：旅行、筋トレ、ご飯</h3>
+                    <p><strong>旅行は国内外関わらず、年に10回程度行っており、現地のおいしいご飯とお酒を飲むのが楽しみです。<br>
+                    筋トレは、今年で8年目になり、リフレッシュ、健康維持のために続けています。<br>
+                    身体が小さいこともあるので、できるだけたくましくありたいと思っています！</strong>
+                </p>
+                <p>
+                    My hobbies are that traveling, food and working out.<br>
+                    I like traveling fro domestic and overseas, I travel more than 10 times in a year.<br>
+                    I love eating and drinking local recommended.<br>
+                    About working out, it has been for 8 years since I started it.<br>
+                    Becase I am a small guy, I would like to be a storong then!
+                </p>
+                
+                
+            </div>
+                <div class="profile-photo2">
+                    <img src="images/food0.jpeg" id="food" width="300" height="400" alt="趣味の写真"
+                    onclick="changeImgfood()">
+                </div>
+                
+        </div>
+   
+    <!--ここまで-->
+
+    <!--勉強ページ-->
+    
+    <div class="study-block">
+        <div class="study-photo">
+            <img src="images/melaptop.jpeg" width="250" height="300" alt="">
+        </div>
+        
+        <div class="study-text">
+            <h3 id="study">勉強している言語：HTML、CSS、JavaScript、JAVA、SQL
+            </h3>
+            <p>エンジニア未経験なので、このポートフォリオが初めての成果物になります。<br>
+            今勉強しているのが、HTML、CSS、JavaScript、JAVA、SQLです。<br>
+            まずは言語、プログラミングに慣れるため多くのコードに触れるようにしています。<br>
+            将来はエンジニアとして、世界と繋がるプラットフォームを作りたいと思っています。<br>
+            自動翻訳に加え、ライブチャットなどでも対応できる、瞬間を共有できるシステムを作りたいです！
+            </p>
+        </div>
+        
+    </div>
+</div>
+    
+    <!--コンタクトページ-->
+    <div class="contact-block">
+        <h3 id="contact">CONTACT</h3>
+        <div class="contact-text">
+            ポートフォリオをご覧いただきありがとうございます。<br>
+            僕に興味をもっていただきご連絡頂ける方は以下のフォームよりお願い致します。
+        </div>
+        <div class="contact-form">
+            <form method="GET" action="result.html">
+
+                <div class="contact-info">
+                    <label>あなたの情報をご記入ください。<br>
+                        Please inform your information<br>
+                        <input type="text" name ="information" placeholder="名前：First name"><br>
+                        <input type="text" name ="information" placeholder="姓：Last name"><br>
+                    <input type="text" name="information" placeholder="E-mail"></label>
+                </div>
+
+                <div class="contact">
+                    <label>コメント：Free comment<br>
+                    <textarea name="comment"></textarea> </label>
+                </div>
+
+                <div class="contact">
+                    <input type="submit" name="submit" value="送信：submit">
+                </div>
+            </form>
+        </div>
+       
+    </div>
+
+    </main>
+
+    <!--フッター-->
+    <footer class="footer">
+        <p>Nate's Portfolio <a href="index.html#top">Topへ</a></p>
+       
+    </footer>
+    
+</body>
+</html>
