@@ -9,6 +9,7 @@ header{
     background-color: skyblue;
     padding-top: 32px;
     padding-bottom: 32px;
+    margin: 0 auto;
 }
 
 .container{
@@ -95,6 +96,10 @@ h3 {
     margin-right: 25px;
 }
 
+.profile-text1 {
+    width: 100%;
+}
+
 .profile-block2 {
     display: flex;
     margin-top: 50px;
@@ -146,4 +151,88 @@ textarea {
 .footer {
     padding-left: 20px;
     background-color: skyblue;
+}
+
+/* スマホ向け */
+
+@media (max-width: 767px) {
+    .container {
+        margin: 30px auto;
+        width: 300px;
+        display: block;
+    }
+
+    .icon {
+        text-align: center;
+    }
+
+    .info ul {
+        display: block;
+    }
+
+
+    .photo-frame {
+        display: block;
+    }
+
+    h1.profile {
+        text-align: left;
+        margin-left: 10px;
+    }
+
+    /*mainページ*/
+    main {
+        width: 100%;
+    }
+    .profile-block1 {
+        display: block;
+
+    }
+
+    .profile-photo1 {
+        margin-right: 0;
+        width: 100%;
+
+    }
+
+    .profile-text1 {
+        max-width: 100%;
+        margin: 0;
+    }
+
+    .profile-block2 {
+        display: block;
+
+    }
+
+    .profile-photo2 {
+        margin-right: 0;
+        width: 100%;
+
+    }
+
+    .profile-text2 {
+        max-width: 100%;
+    }
+
+    .study-block {
+        display: block;
+
+    }
+
+    .study-photo {
+        margin-right: 0;
+        width: 100%;
+
+    }
+
+    .study-text{
+        max-width: 100%;
+    }
+
+
+
+    
+
+    
 }
